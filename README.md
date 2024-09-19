@@ -89,4 +89,4 @@ git checkout -b feature/your-feature-name
 8. **Create a Pull Request:** Go to the original repository, and click "Compare & pull request." Describe your changes in detail.
 
 ## License
-his project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
