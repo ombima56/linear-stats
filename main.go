@@ -7,6 +7,7 @@ import (
 
 	linearregressionline "learn.zone01kisumu.ke/git/hiombima/linear-stats/linearRegressionLine"
 	correlation "learn.zone01kisumu.ke/git/hiombima/linear-stats/pearsonCorrelationCoefficient"
+	"learn.zone01kisumu.ke/git/hiombima/linear-stats/readfile"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 	}
 
 	filePath := os.Args[1]
-	data, err := ReadData(filePath)
+	data, err := readfile.ReadData(filePath)
 	if err != nil {
 		log.Printf("Failed to read Data: %s", err)
 		return
