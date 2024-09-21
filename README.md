@@ -30,7 +30,7 @@ The data should be in a text file where each line contains a single numeric valu
 To clone this repository, use the following command in your terminal:
 
 ```bash
-git clone https://learn.zone01kisumu.ke/git/hiombima/linear-stats.git
+git clone https://github.com/ombima56/linear-stats.git
 cd linear-stats
 ```
 
