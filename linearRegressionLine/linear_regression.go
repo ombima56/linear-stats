@@ -1,4 +1,4 @@
-package main
+package linearregressionline
 
 func LinearRegression(data []float64) (slope, intercept float64) {
 	num := float64(len(data))

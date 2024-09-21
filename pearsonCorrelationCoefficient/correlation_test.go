@@ -1,4 +1,4 @@
-package main
+package correlation
 
 import (
 	"math"

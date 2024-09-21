@@ -4,6 +4,10 @@ import (
 	"fmt"
 	"log"
 	"os"
+
+	linearregressionline "learn.zone01kisumu.ke/git/hiombima/linear-stats/linearRegressionLine"
+	correlation "learn.zone01kisumu.ke/git/hiombima/linear-stats/pearsonCorrelationCoefficient"
+	"learn.zone01kisumu.ke/git/hiombima/linear-stats/readfile"
 )
 
 func main() {
@@ -13,14 +17,14 @@ func main() {
 	}
 
 	filePath := os.Args[1]
-	data, err := ReadData(filePath)
+	data, err := readfile.ReadData(filePath)
 	if err != nil {
 		log.Printf("Failed to read Data: %s", err)
 		return
 	}
 
-	slope, intercept := LinearRegression(data)
-	correlation := Correlation(data)
+	slope, intercept := linearregressionline.LinearRegression(data)
+	correlation := correlation.Correlation(data)
 	fmt.Printf("Linear Regression Line: y = %.6fx + %.6f\n", slope, intercept)
 	fmt.Printf("Pearson Correlation Coefficient: %.10f\n", correlation)
 }
