@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	linearregressionline "learn.zone01kisumu.ke/git/hiombima/linear-stats/linearRegressionLine"
-	correlation "learn.zone01kisumu.ke/git/hiombima/linear-stats/pearsonCorrelationCoefficient"
-	"learn.zone01kisumu.ke/git/hiombima/linear-stats/readfile"
+	linearregressionline "github.com/ombima56/linear-stats/linear-stats/linearRegressionLine"
+	correlation "github.com/ombima56/linear-stats/linear-stats/pearsonCorrelationCoefficient"
+	"github.com/ombima56/linear-stats/linear-stats/readfile"
 )
 
 func main() {
