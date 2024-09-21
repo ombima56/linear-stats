@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	linearregressionline "learn.zone01kisumu.ke/git/hiombima/linear-stats/linearRegressionLine"
 	correlation "learn.zone01kisumu.ke/git/hiombima/linear-stats/pearsonCorrelationCoefficient"
 )
 
@@ -21,7 +22,7 @@ func main() {
 		return
 	}
 
-	slope, intercept := LinearRegression(data)
+	slope, intercept := linearregressionline.LinearRegression(data)
 	correlation := correlation.Correlation(data)
 	fmt.Printf("Linear Regression Line: y = %.6fx + %.6f\n", slope, intercept)
 	fmt.Printf("Pearson Correlation Coefficient: %.10f\n", correlation)
